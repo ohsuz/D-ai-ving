@@ -1,4 +1,4 @@
-[![텍스트](https://user-images.githubusercontent.com/59340911/106117720-a7045600-6196-11eb-9aa0-1419dbf07210.jpg)](https://www.notion.so/0eac284d3ac84a1ab47886356ba99385?v=43622224fb5f4ed09cfefa70d6b70c15)
+[![텍스트](https://user-images.githubusercontent.com/59340911/106117720-a7045600-6196-11eb-9aa0-1419dbf07210.jpg)](https://www.notion.so/D-ai-ving-4eea7ae4facc48ac973a531238b35f9e)
 
 ## :whale:	Assignments
 > 부스트캠프 과제 풀이 보관소
