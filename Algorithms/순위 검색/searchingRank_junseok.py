@@ -1,8 +1,13 @@
 import bisect 
+# bisect.insort(arr, 넣을언소) 정렬된 arrray에 넣어줌
 
 def upper_bound(arr, score):
     return len(arr[bisect.bisect_right(arr,score-1):])
 
+# (1 , 2, 3, 4, 5, 6)
+
+# 10011(2) = 19
+# language - fb - js - food
 def solution(infos, querys):
     scores = [[] for _ in range(1<<5)]
     appdict= {
@@ -69,6 +74,6 @@ def doubleCheck(results, appidx):
 
 infos = ["java backend junior pizza 150","python frontend senior chicken 210","python frontend senior chicken 150","cpp backend senior pizza 260","java backend junior chicken 80","python backend senior chicken 50"]
 querys = ["java and backend and junior and pizza 100","python and frontend and senior and chicken 200","cpp and - and senior and pizza 250","- and backend and senior and - 150","- and - and - and chicken 100","- and - and - and - 150"]
-
+10110
 # solution(infos, querys)
 print(solution(infos, querys))
