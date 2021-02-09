@@ -1,21 +1,20 @@
     
 def solution(n):
-    chess = [[0 for __ in range(n)] for _ in range(n)]
+    col = [False for _ in range(n)]
+    rightUp = [False for _ in range(2*n-1)]
+    leftUp = [False for _ in range(2*n-1)]
     answer = 0
-    def setChess(i,j):
-        for 
     def recur(q):
         nonlocal answer
-        if q==4:
+        if q==n:
             answer += 1
             return
         for i in range(n):
-            for j in range(n):
-                if chess[i][j] == 0:                    
-                    recur(q+1)
-                
-    
-    
+            if col[i] == False and rightUp[i+q] == False and leftUp[n + q - i - 1] == False:                    
+                col[i], rightUp[i+q], leftUp[n + q - i - 1] = True, True, True
+                recur(q+1)                                
+                col[i], rightUp[i+q], leftUp[n + q - i - 1] = False, False, False
+    recur(0)    
     return answer
 
 print(solution(4))
